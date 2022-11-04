@@ -101,7 +101,7 @@ RUN sed -i 's|openssl_conf = default_conf|openssl_conf = openssl_def|' "${OPENSS
   && echo "dynamic_path = ${OPENSSL_DIR}/lib/engines-3/gost.so" >> "${OPENSSL_CONF}" \
   && echo "default_algorithms = ALL" >> "${OPENSSL_CONF}"
 
-RUN ln -s /usr/local/src/openssl-3.0.5/.openssl/lib /usr/local/src/openssl-3.0.5/.openssl/lib64
+RUN ln -s "/usr/local/src/openssl-${OPENSSL_VERSION}/.openssl/lib" "/usr/local/src/openssl-${OPENSSL_VERSION}/.openssl/lib64"
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
