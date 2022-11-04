@@ -1,6 +1,6 @@
 # Docker image with Nginx + OpenSSL 3 + GOST engine
 
-The docker image with nginx 1.23.2 + openssl 3.0.5 + gost engine 3.0.1
+The docker image with nginx 1.23.2 + openssl 3.0.7 + gost engine 3.0.1
 Supports GOST ciphers and up to TLSv1.2
 
 ## Build

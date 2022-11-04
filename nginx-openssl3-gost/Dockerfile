@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 ARG NGINX_VERSION=1.23.2
-ARG OPENSSL_VERSION=3.0.5
+ARG OPENSSL_VERSION=3.0.7
 
 RUN apt-get update \
   && apt-get install wget build-essential libpcre++-dev libz-dev ca-certificates cmake git --no-install-recommends -y \
